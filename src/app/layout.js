@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Registry as StyledComponetRegistry } from "@/style/registry";
 import Header from "@/components/Headers";
+import SnsButtons from "@/components/SnsButtons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <body className={inter.className}>
+          <SnsButtons/>
           <Header/>
           <StyledComponetRegistry>
             {children}
